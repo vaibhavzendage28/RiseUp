@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>RiseUp — Online Tutoring</title>
+    <meta name="description" content="Personal online tutor — subjects, notes, and live classes. Book a free demo." />
+    <!-- Open Graph -->
+    <meta property="og:title" content="RiseUp — Online Tutoring" />
+    <meta property="og:description" content="Personal online tutor — subjects, notes, and live classes. Book a free demo." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0f172a" />
+    <!-- Preconnect fonts (optional) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="input.css"/>
+  </head>
+
+  <body class="bg-slate-900 text-slate-50 relative" id="body">
+    <nav class="flex justify-between items-center p-4 bg-slate-950 w-100%" id="nav">
+      <div class="nav1 text-2xl font-bold cursor-pointer ml-5 relative group ">
+        <h4 class="hover:text-blue-500 transition-colors duration-300">
+          <a href="#body" class="scroll-smooth">RiseUp</a>
+        </h4>
+        <span
+          class="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 group-hover:w-full transition-all duration-300"
+        ></span>
+      </div>
+      <div
+        class="nav2 flex items-center gap-10 text-md font-semibold cursor-pointer mr-5"
+      >
+        <div
+          class="menu1 px-4 py-2 rounded-2xl cursor-pointer relative group transition-all duration-200"
+        >
+          <a href="#body" class="scroll-smooth">Home</a>
+          <span
+            class="absolute bottom-1 left-4 right-4 h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+          ></span>
+        </div>
+        <div
+          class="menu1 px-4 py-2 rounded-2xl cursor-pointer relative group transition-all duration-200"
+        >
+          <a href="#courses" class="scroll-smooth">Courses</a>
+          <span
+            class="absolute bottom-1 left-4 right-4 h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+          ></span>
+        </div>
+        <div
+          class="menu1 px-4 py-2 rounded-2xl cursor-pointer relative group transition-all duration-200"
+        >
+          <a href="#study-material" class="scroll-smooth">Study-Material</a>
+          <span
+            class="absolute bottom-1 left-4 right-4 h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+          ></span>
+        </div>
+        <div
+          class="menu1 px-4 py-2 rounded-2xl cursor-pointer relative group transition-all duration-200"
+        >
+          <a href="#about" class="scroll-smooth">About</a>
+          <span
+            class="absolute bottom-1 left-4 right-4 h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+          ></span>
+        </div>
+        <div
+          class="menu1 px-4 py-2 rounded-2xl cursor-pointer relative group transition-all duration-200"
+        >
+          <a href="#footer" class="scroll-smooth">Contact</a>
+          <span
+            class="absolute bottom-1 left-4 right-4 h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"
+          ></span>
+        </div>
+        <button
+          class="cursor-pointer ml-10 bg-blue-600 px-4 py-2 rounded-2xl hover:bg-blue-700 hover:-translate-y-0.5 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/50 transition-all duration-200 start"
+        >
+          <a href="#study-material" class="scroll-smooth">Get Started</a>
+        </button>
+
+        <div class="dropdown-container">
+          <button class="dropdown-toggle">
+            <span class="text-2xl"></span>
+            <i class="ri-menu-line text-xl"></i>
+          </button>
+          
+          <div class="dropdown-menu bg-slate-950" id="dropdownMenu">
+            <div class="dropdown-item"><a href="#body" class="scroll-smooth">Home</a></div>
+            <div class="dropdown-item"><a href="#courses" class="scroll-smooth">Courses</a></div>
+            <div class="dropdown-item"><a href="#study-material" class="scroll-smooth">Study Material</a></div>
+            <div class="dropdown-item"><a href="#about" class="scroll-smooth">About</a></div>
+            <div class="dropdown-item"><a href="#footer" class="scroll-smooth">Contact Us</a></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container h-full px-4">
+          <h1>Unlock Your Potential with RiseUp</h1>
+          <p>Personalized online tutoring in various subjects. Access study materials, live classes, and expert guidance to excel academically.</p>
+        </div>
+      </section>
+      <!-- END HERO -->
+
+      <!-- courses -->
+      <section class="courses" id="courses">
+        <div class="container px-4">
+          <h1>Our Courses</h1>
+          <p>Explore our wide range of courses designed to help you succeed in your academic journey. Whether you're looking to strengthen your fundamentals or advance your knowledge, we have the right course for you.</p>
+          <div class="courses-grid">
+            <div class="course-card">
+              <h3>Mathematics</h3>
+              <p>Master the fundamentals of algebra, geometry, calculus, and more with our expert tutors.</p>
+            </div>
+            <div class="course-card">
+              <h3>Science</h3>
+              <p>Explore the wonders of physics, chemistry, and biology through interactive lessons and experiments.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end courses -->
+
+      <!-- study material -->
+      <section class="study-material" id="study-material">
+        <div class="container px-4">
+          <h2>Study Material</h2>
+          <p>Access a variety of study materials to complement your learning. Our resources are designed to help you understand concepts better and prepare effectively for exams.</p>
+          
+          <div class="card-header" onclick="toggleCard(this)">
+            <h3>Mathematics [10th SSC]</h3>
+            <span class="toggle-icon">▼</span>
+          </div>
+    
+          <div class="card-content">
+            <div class="notes-list">
+              <a href="https://drive.google.com/file/d/1yWeD-g4gUD9-5BrR0nGdc4XXACtg069R/view?usp=drive_link" target="_blank" class="note-link">
+                <span class="note-title">2025 Question Paper and Ans</span>
+              </a>
+            </div>
+          </div>
+          <div class="card-header" onclick="toggleCard(this)">
+            <h3>Mathematics [10th CBSE]</h3>
+            <span class="toggle-icon">▼</span>
+          </div>
+    
+          <div class="card-content">
+            <div class="notes-list">
+              <a href="https://drive.google.com/file/d/1QHTKz-b0efVZiCYGLL4IDfyXyMztnGcD/view?usp=drive_link" target="_blank" class="note-link">
+                <span class="note-title">Sample Question Paper</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Us -->
+      <section class="about" id="about">
+        <div class="container px-4">
+          <h2>About Us</h2>
+          <p>At RiseUp, we believe in the power of personalized education. Our mission is to provide high-quality online tutoring that caters to the unique needs of each student. Whether you're struggling with a specific subject or looking to enhance your knowledge, our expert tutors are here to help you succeed.</p>
+          <p>We offer a wide range of subjects, comprehensive study materials, and interactive live classes designed to make learning engaging and effective. Join us today and take the first step towards achieving your academic goals!</p>
+        </div>
+      </section>
+      <!-- End About Us -->
+    </main>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="flex">
+          <div class="footer-left">
+            <div class="copyright">
+              © <span id="year"></span> <span class="brand">RiseUp</span>
+            </div>
+            <div class="tagline">Empowering minds, one lesson at a time</div>
+          </div>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <i class="ri-youtube-line"></i>
+            </a>
+            <a href="#" aria-label="GitHub">
+              <i class="ri-github-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
