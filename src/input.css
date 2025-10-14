@@ -108,7 +108,8 @@ nav .nav1 h4{
   transform: translateY(0);
 }
 
-.dropdown-item {
+.dropdown-item a{
+  display: block;
   padding: 14px 20px;
   cursor: pointer;
   transition: all 0.2s ease;
