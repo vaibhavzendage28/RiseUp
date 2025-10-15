@@ -156,6 +156,9 @@ nav .nav1 h4{
 
 /* hero */
 .dark .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 80vh;
   width: 100%;
   background: linear-gradient(135deg, rgba(17, 24, 39, 0.8) 0%, rgba(31, 41, 55, 0.8) 100%), url(./assets/hero.jpg);
@@ -203,6 +206,9 @@ nav .nav1 h4{
 /* courses */
 
 .courses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 2rem 2rem;
   width: 100%;
 }
@@ -268,6 +274,9 @@ nav .nav1 h4{
 
 /* study material */
 .study-material {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 2rem 2rem;
   width: 100%;
 }
@@ -416,6 +425,9 @@ nav .nav1 h4{
 /* about */
 
 .about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 2rem 2rem;
   text-align: center;
   max-width: 100%;
@@ -452,6 +464,7 @@ footer {
   position: relative;
   overflow: hidden;
   z-index: 10;
+
 }
 
 .dark footer {
@@ -483,7 +496,7 @@ footer::before {
 footer .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 2rem 2rem;
 }
 
 footer .flex {
