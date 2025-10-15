@@ -494,9 +494,15 @@ footer::before {
 }
 
 footer .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
+
+@media( max-width:810px ){
+  footer .container {
+    padding: 0rem 2rem;
+}
 }
 
 footer .flex {
