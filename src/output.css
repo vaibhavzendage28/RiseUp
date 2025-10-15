@@ -31,6 +31,7 @@
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-gray-900: oklch(21% 0.034 264.665);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-xl: 1.25rem;
@@ -352,6 +353,9 @@
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
+  .bg-black {
+    background-color: var(--color-black);
+  }
   .bg-blue-600 {
     background-color: var(--color-blue-600);
   }
@@ -378,9 +382,6 @@
   }
   .bg-purple-900 {
     background-color: var(--color-purple-900);
-  }
-  .bg-slate-950 {
-    background-color: var(--color-slate-950);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -437,6 +438,9 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+  .text-black {
+    color: var(--color-black);
   }
   .text-blue-100 {
     color: var(--color-blue-100);
@@ -605,6 +609,21 @@
       background-color: var(--color-slate-900);
     }
   }
+  .dark\:bg-slate-950 {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-slate-950);
+    }
+  }
+  .dark\:bg-white {
+    &:where(.dark, .dark *) {
+      background-color: var(--color-white);
+    }
+  }
+  .dark\:text-slate-50 {
+    &:where(.dark, .dark *) {
+      color: var(--color-slate-50);
+    }
+  }
 }
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
@@ -707,12 +726,19 @@ nav .nav1 h4 {
   visibility: visible;
   transform: translateY(0);
 }
-.dropdown-item a {
+.dark .dropdown-item a {
   display: block;
   padding: 14px 20px;
   cursor: pointer;
   transition: all 0.2s ease;
   border-bottom: 1px solid #f0f0f0;
+}
+.dropdown-item a {
+  display: block;
+  padding: 14px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid black;
 }
 .dropdown-item:last-child {
   border-bottom: none;
@@ -721,6 +747,14 @@ nav .nav1 h4 {
   background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding-left: 30px;
+}
+.dark .hero {
+  height: 80vh;
+  width: 100%;
+  background: linear-gradient(135deg, rgba(17, 24, 39, 0.8) 0%, rgba(31, 41, 55, 0.8) 100%), url(./assets/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 .hero {
   height: 80vh;

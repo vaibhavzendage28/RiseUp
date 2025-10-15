@@ -122,7 +122,7 @@ nav .nav1 h4{
   transform: translateY(0);
 }
 
-.dropdown-item a{
+.dark .dropdown-item a{
   display: block;
   padding: 14px 20px;
   cursor: pointer;
@@ -130,7 +130,19 @@ nav .nav1 h4{
   border-bottom: 1px solid #f0f0f0;
 }
 
-.dropdown-item:last-child {
+.dropdown-item a{
+  display: block;
+  padding: 14px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid black;
+}
+
+.dropdown-item:last-child a{
+  border-bottom: none;
+}
+
+.dark .dropdown-item:last-child a{
   border-bottom: none;
 }
 
@@ -143,6 +155,15 @@ nav .nav1 h4{
 /* main content */
 
 /* hero */
+.dark .hero {
+  height: 80vh;
+  width: 100%;
+  background: linear-gradient(135deg, rgba(17, 24, 39, 0.8) 0%, rgba(31, 41, 55, 0.8) 100%), url(./assets/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
 .hero {
   height: 80vh;
   width: 100%;
@@ -336,6 +357,14 @@ nav .nav1 h4{
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
+  background: whitesmoke;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.dark .card-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
@@ -349,6 +378,19 @@ nav .nav1 h4{
 }
 
 .note-link {
+  display: block;
+  padding: 12px 15px;
+  margin: 8px 0;
+  background-color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  text-decoration: none;
+  color: black;
+  border-left: 3px solid #667eea;
+  transition: all 0.2s;
+}
+
+.dark .note-link {
   display: block;
   padding: 12px 15px;
   margin: 8px 0;
@@ -403,6 +445,16 @@ nav .nav1 h4{
 /* footer */
 
 footer {
+  background: linear-gradient(135deg, rgba(249, 250, 251, 0.95) 0%, rgba(243, 244, 246, 0.95) 100%);
+  backdrop-filter: blur(10px);
+  border-top: 2px solid rgba(139, 92, 246, 0.3);
+  padding: 2rem 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.dark footer {
   background: linear-gradient(135deg, rgba(17, 24, 39, 0.95) 0%, rgba(31, 41, 55, 0.95) 100%);
   backdrop-filter: blur(10px);
   border-top: 2px solid rgba(139, 92, 246, 0.3);
@@ -449,6 +501,13 @@ footer .flex {
 }
 
 footer .copyright {
+    color: black;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.dark footer .copyright {
     color: #d1d5db;
     font-size: 0.95rem;
     font-weight: 500;
@@ -465,6 +524,12 @@ footer .brand {
 }
 
 footer .tagline {
+    color: black;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.dark footer .tagline {
     color: #9ca3af;
     font-size: 0.85rem;
     font-style: italic;
