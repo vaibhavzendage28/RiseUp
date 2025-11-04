@@ -168,6 +168,9 @@ nav .nav1 h4{
 }
 
 .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 80vh;
   width: 100%;
   background: linear-gradient(135deg, rgba(17, 24, 39, 0.8) 0%, rgba(31, 41, 55, 0.8) 100%), url(./assets/hero.jpg);
